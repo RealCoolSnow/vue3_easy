@@ -3,7 +3,7 @@
  * @Author: CoolSnow (coolsnow2020@gmail.com)
  * @Date: 2020-09-14 18:12:22
  * @LastEditors: CoolSnow
- * @LastEditTime: 2020-09-15 12:07:05
+ * @LastEditTime: 2020-09-15 14:31:33
  */
 import { createI18n } from "vue-i18n";
 import Cookies from "js-cookie";
@@ -39,6 +39,7 @@ export function getLanguage() {
 }
 
 const i18n = createI18n({
+  legacy: true,
   // set locale
   // options: en | zh | es
   locale: getLanguage(),

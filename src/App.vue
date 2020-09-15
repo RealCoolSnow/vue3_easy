@@ -4,7 +4,7 @@
  * @Author: CoolSnow (coolsnow2020@gmail.com)
  * @Date: 2020-09-14 16:19:45
  * @LastEditors: CoolSnow
- * @LastEditTime: 2020-09-15 12:18:55
+ * @LastEditTime: 2020-09-15 15:02:19
 -->
 <template>
   <div id="nav">
@@ -21,12 +21,4 @@ export default {
   }
 };
 </script>
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-</style>
+<style lang="less"></style>

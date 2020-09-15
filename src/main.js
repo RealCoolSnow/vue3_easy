@@ -3,7 +3,7 @@
  * @Author: CoolSnow (coolsnow2020@gmail.com)
  * @Date: 2020-09-14 16:19:45
  * @LastEditors: CoolSnow
- * @LastEditTime: 2020-09-14 18:43:19
+ * @LastEditTime: 2020-09-15 15:04:14
  */
 import { createApp } from "vue";
 import App from "./App.vue";
