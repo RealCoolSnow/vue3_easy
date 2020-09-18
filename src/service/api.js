@@ -5,7 +5,7 @@
  * @LastEditors: CoolSnow
  * @LastEditTime: 2020-09-14 17:47:01
  */
-import request from "@/service";
+import request from "@/service"
 
 export const hello = (params, opts) =>
-  request.get("hello", { params, ...opts });
+  request.get("hello", { params, ...opts })

@@ -5,10 +5,10 @@
  * @LastEditors: CoolSnow
  * @LastEditTime: 2020-09-15 14:31:33
  */
-import { createI18n } from "vue-i18n";
-import Cookies from "js-cookie";
-import cnLocale from "./cn";
-import enLocale from "./en";
+import { createI18n } from "vue-i18n"
+import Cookies from "js-cookie"
+import cnLocale from "./cn"
+import enLocale from "./en"
 
 const messages = {
   cn: {
@@ -17,25 +17,25 @@ const messages = {
   en: {
     ...enLocale
   }
-};
+}
 
 export function getLanguage() {
-  const chooseLanguage = Cookies.get("language");
+  const chooseLanguage = Cookies.get("language")
   if (chooseLanguage) {
-    return chooseLanguage;
+    return chooseLanguage
   }
 
   // if has not choose language
   const language = (
     navigator.language || navigator.browserLanguage
-  ).toLowerCase();
-  const locales = Object.keys(messages);
+  ).toLowerCase()
+  const locales = Object.keys(messages)
   for (const locale of locales) {
     if (language.indexOf(locale) > -1) {
-      return locale;
+      return locale
     }
   }
-  return "cn";
+  return "cn"
 }
 
 const i18n = createI18n({
@@ -45,13 +45,13 @@ const i18n = createI18n({
   locale: getLanguage(),
   // set locale messages
   messages
-});
+})
 
 export function checkoutLanguage(lang) {
-  Cookies.set("language", lang);
-  i18n.locale = lang;
+  Cookies.set("language", lang)
+  i18n.locale = lang
 }
 
-checkoutLanguage(getLanguage());
+checkoutLanguage(getLanguage())
 
-export default i18n;
+export default i18n

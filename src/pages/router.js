@@ -16,4 +16,4 @@ export default [
     name: "about",
     component: () => import(/* webpackChunkName: "about" */ "@/pages/about/")
   }
-];
+]
